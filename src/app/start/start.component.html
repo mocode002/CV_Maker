@@ -1,0 +1,20 @@
+<div id="big_container">
+
+    <div class="container" id="start">
+      <p id="choose">Please choose a template :</p>
+      <div class="cv-templates">
+
+        @for(template of templates ; track template.image){
+            <div (click)="goToTemplate(template.route)" class="imgs_container">
+                <img [src]="template.image" alt="CV Template" class="images">
+            </div>
+        }
+
+      </div>
+    </div>
+  
+</div>
+
+
+
+

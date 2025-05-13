@@ -1,0 +1,291 @@
+/* GENERAL */
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007BFF; /* Nouvelle couleur pour les liens */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  p {
+    margin: 0 0 1rem;
+  }
+  
+  h1 {
+    margin: 0 0 1rem;
+    font-size: 2rem; /* Ajustement de la taille de police */
+    margin-bottom: .5rem;
+  }
+  
+  h2 {
+    margin: 0 0 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .text-blue {
+    color: #007BFF; /* Nouvelle couleur bleue */
+  }
+  
+  .text-darkblue {
+    color: #004080; /* Nouvelle nuance de bleu foncé */
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .icon {
+    margin-right: .5rem;
+  }
+  
+  .cv-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left-column right-column right-column";
+    width: 220mm; /* Largeur à 100% pour la responsivité */
+    height: 360mm;
+    margin: 50px auto; /* Ajustement de la marge */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajustement de l'ombre */
+  }
+  
+  .section {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* LEFT COLUMN */
+  .left-column {
+    grid-area: left-column;
+    padding: 20px; /* Réduction de la marge interne */
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .portrait {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px; /* Réduction de la marge inférieure */
+  }
+  
+  .skills {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1rem; /* Ajustement de la taille de police */
+    letter-spacing: 1px;
+    margin: 0 0 1rem;
+  }
+  
+  /* RIGHT COLUMN */
+  .right-column {
+    grid-area: right-column;
+    display: grid;
+    grid-template-rows: auto 1fr; /* Ajustement de la hauteur de la première rangée */
+    grid-template-areas: "header" "content";
+  }
+  
+  /* HEADER */
+  .header {
+    grid-area: header;
+    padding: 20px; /* Réduction de la marge interne */
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .infos {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* CONTENT */
+  .content {
+    grid-area: content;
+    padding: 20px; /* Réduction de la marge interne */
+    background-color: #fff;
+  }
+  
+  .experience-list {
+    list-style-type: none;
+  }
+  /* Expérience List Item */
+  .experience-list input {
+    border: none; /* Bordure initialement transparente */
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease; /* Ajout d'une transition pour une animation fluide */
+    background-color: #fff; /* Fond blanc par défaut */
+  }
+  
+  .experience-list input:focus,
+  .experience-list textarea:focus {
+    border: none; /* Bordure visible lorsqu'en focus */
+  }
+  
+  /* Ajout d'une classe pour styliser les champs remplis */
+  .experience-list input:not(:placeholder-shown),
+  .experience-list textarea:not(:placeholder-shown) {
+    border:none/* Bordure visible lorsque le champ n'est pas vide */
+    /* background-color : #F2F2F2; Fond gris clair lorsque le champ n'est pas vide */
+  }
+  
+  /* Appliquer le style aux champs input et textarea dans la partie gauche du CV */
+  .left-column input,
+  .left-column textarea {
+    border: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+    background-color: #007BFF; /* Couleur du fond de la partie gauche */
+    color: white; /* Couleur du texte */
+  }
+  
+  
+  /* Appliquer le style aux champs remplis */
+  .left-column input:not(:placeholder-shown),
+  .left-column textarea:not(:placeholder-shown) {
+    border: none;
+    background-color: #007BFF;
+  }
+  
+  /* Appliquer le style aux titres personnels, email et adresse dans la partie droite du CV */
+  .right-column .header h1,
+  .right-column .header ul li input,
+  .right-column .header p textarea {
+    border: 1px solid transparent;
+    padding: 8px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease;
+    background-color: #F2F2F2; /* Couleur du fond de la partie droite */
+  }
+  
+  .right-column .header ul li input:focus,
+  .right-column .header p textarea:focus {
+    border: none; /* Bordure visible en focus */
+  }
+  
+  /* Appliquer le style aux champs remplis */
+  .right-column .header ul li input:not(:placeholder-shown),
+  .right-column .header p textarea:not(:placeholder-shown) {
+    border:none;
+    background-color: #F2F2F2;
+  }
+  
+  input {
+    border: none;
+    
+    transition: border 0.3s ease;
+    width: 70%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Styles spécifiques pour les champs de formation */
+  #educationList input ,#experienceList input ,#otherExperienceList input {
+    font-weight: bold; /* Texte en gras pour le champ de formation */
+  }
+  
+  #educationList input:nth-child(2),
+  #educationList input:nth-child(3) ,
+  #experienceList textarea,
+  #experienceList input:nth-child(3) 
+  #otherExperienceList textarea,
+  #otherExperienceList input:nth-child(3) {
+    color: gray; /* Couleur grise pour l'établissement et l'année */
+    /* font-style: italic; Texte en italique pour l'établissement et l'année */
+  }
+  
+  .right-column .header h1 input {
+    height: 60px; /* Ajustez la valeur selon vos préférences */
+    font-size: 200%;
+    background-color: #f2F2F2;
+  }
+  
+  
+  ::ng-deep.xxx{
+    border: none;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  ::ng-deep.xxx:first-child{
+    font-size: 120%;
+  }
+  
+  ::ng-deep.xxx:last-child{
+    color: gris ;
+    /* font-style: italic; */
+  }
+  
+  ::ng-deep.bbb{
+    background-color: #007BFF;
+    border: none;
+    width: 90%;
+  }
+  
+  /* button{
+    background-color: #02172c;
+    color: #F2F2F2;
+    border-radius: 5px;
+    padding: 15px 10;
+    font-size: 200%;
+  } */
+
+  button {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #3e3f3e;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #button_cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  ::ng-deep p{
+    color: #000;
+  }
+  
+
+  .content.section input{
+    background-color:#f4f4f4 ;
+  }
+  #topdf{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 62);
+    color: white;
+    font-family: "Roboto",sans-serif;
+    cursor: pointer;
+  }

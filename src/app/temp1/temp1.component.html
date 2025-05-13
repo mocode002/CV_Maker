@@ -1,0 +1,121 @@
+<div id="body">
+    <div class="resume" id="content">
+      <div id="left_side">
+        <div class="block"> 
+          <img class="portrait" id="previewImage" src="assets/images/suit1.jpg" alt="Aperçu de l'image" (click)="openFileInput()">
+          <input type="file" id="imageInput" accept="image/*" (change)="previewImage($event)" style="display: none;">
+        </div>
+  
+        <div class="block">
+          <h3>Contact</h3>
+          <div class="inside_section">
+            <p class="bold">Phone</p>
+            <p contenteditable="true">123-123-123-123</p>
+          </div>
+          <div class="inside_section">
+            <p class="bold">Email</p>
+            <p contenteditable="true">example&#64;mail.com</p>
+          </div>
+          <div class="inside_section">
+            <p class="bold">Address</p>
+            <p contenteditable="true">123 Anywhere</p>
+          </div>
+        </div>
+  
+        <div class="block">
+          <h3>Education</h3>
+          <div class="inside_section">
+            <p contenteditable="true">2008</p>
+            <p class="bold" contenteditable="true">Enter your Degree</p>
+            <p contenteditable="true">University/College</p>
+          </div>
+          <div class="inside_section">
+            <p contenteditable="true">2008</p>
+            <p class="bold" contenteditable="true">Enter your Degree</p>
+            <p contenteditable="true">University/College</p>
+          </div>
+        </div>
+        <div class="block">
+          <h3>Skills</h3>
+          <ul>
+            <li contenteditable="true">UI/UX</li>
+            <li contenteditable="true">Visual Design</li>
+            <li contenteditable="true">Wireframes</li>
+            <li contenteditable="true">Storyboards</li>
+            <li contenteditable="true">User Flows</li>
+          </ul>
+        </div>
+  
+        <div class="block">
+          <h3>Language</h3>
+          <p contenteditable="true" class="lang">English</p>
+          <p contenteditable="true" class="lang">French</p>
+          <p contenteditable="true" class="lang">Spanish</p>
+        </div>
+  
+      </div>
+  
+      <div id="right_side">
+        <div class="block">
+          <!-- <h1 contenteditable="true">John Smith</h1> -->
+          <h1 contenteditable="true" (input)="onTitleInput($event)"> <span>{{title}}</span></h1>
+          <h2 contenteditable="true" id="job_title">Marketing Manager</h2>
+          <p contenteditable="true" class="parag">Lorem ipsum dolor, sit amet consectetur adipisicing
+             elit. Officiis amet quam inventore corporis. Ios illum iste ipsum, explicabo 
+             quasi temporibus iure repudiandae consectetuos illum iste ipsum, explicabo 
+             quasi temporibus iure repudiandae consectetuos illum iste ipsum, explicabo 
+             quasi temmodi quuntur! Quoendi?</p>
+        </div>
+        <div class="block">
+          <h3>Experience</h3>
+          <div class="inside_block">
+            <p contenteditable="true" class="bold">2019-2022</p>
+            <p contenteditable="true">Company name | 123 Anywhere</p>
+            <p contenteditable="true" class="bold position">Job Position</p>
+            <p contenteditable="true" class="parag">Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Fugit eaque eos illum iste ipsum, explicabo 
+              quasi temporibus iure repudiandae consectetur minima ullam asp
+              ernatur modi saepe architecto distinctio molestias dolorem earum.</p>
+          </div>
+          <!-- ************************************** -->
+          <div class="inside_block">
+            <p contenteditable="true" class="bold">2019-2022</p>
+            <p contenteditable="true">Company name | 123 Anywhere</p>
+            <p contenteditable="true" class="bold position">Job Position</p>
+            <p contenteditable="true" class="parag">Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Fugit eaque eos illum iste ipsum, explicabo 
+              quasi temporibus iure repudiandae consectetur minima ullam asp
+              ernatur modi saepe architecto distinctio molestias dolorem earum.</p>
+          </div>
+          <!-- ****************************************** -->
+          <div class="inside_block">
+            <p contenteditable="true" class="bold">2019-2022</p>
+            <p contenteditable="true">Company name | 123 Anywhere</p>
+            <p contenteditable="true" class="bold position">Job Position</p>
+            <p contenteditable="true" class="parag">Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Fugit eaque eos illum iste ipsum, explicabo 
+              quasi temporibus iure repudiandae consectetur minima ullam asp
+              ernatur modi saepe architecto distinctio molestias dolorem earum.</p>
+          </div>
+        </div>
+        <div class="block">
+          <h3>Personal Projects</h3>
+          <ul id="right_ul">
+            <li contenteditable="true">Lorem ipsum dolor sit a hpe modi dicta harum eos.</li>
+            <li contenteditable="true">Lorem ipsum dolor sit a hpe modi dicta harum eos.</li>
+            <li contenteditable="true">Lorem ipsum dolor sit a hpe modi dicta harum eos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- buttons -->
+    <div id="button_container">
+      <!-- <button class="toPDF" (click)="hideAllButtons()">Show / Hide Buttons</button> -->
+      <button class="toPDF" (click)="PDF()">Convert to PDF</button>
+    </div>
+  </div>
+  
+  
+  
+  

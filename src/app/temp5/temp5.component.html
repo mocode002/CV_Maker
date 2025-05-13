@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-...." crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-AAAAAAAAA+KkEOaAOK1KEDZtjQ/MbpFtJgTaq+cV3v7oefcwoZaKTt3XkgLpv7mH9tI6fk3zf08ZxWpOEX7lgIQQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style type="stylesheet">
+            body {
+              background-image: url(assets/img/hero-back-illustration.svg);
+            }
+          </style>
+</head>
+
+<body>
+    <div class="myCV" id="content">
+        <header>
+            <div class="img-content">
+                <label for="imageInput">
+                    <img class="portrait" id="previewImage" src="assets/images/pfp.jpg" alt="Aperçu de l'image">
+                </label>
+                <input type="file" id="imageInput" accept="image/*" (change)="previewImage()" style="display: none;">
+
+            </div>
+            <div class="title">
+                <!-- <h1 class="boldUpper" contenteditable="true">NOM PRENOM </h1> -->
+                <h1 class="boldUpper" contenteditable="true" (input)="onTitleInput($event)">{{title}}</h1>
+                <h2 class="boldUpper" contenteditable="true">TITRE</h2>
+            </div>
+        </header>
+        <div class="content-cv">
+            <div class="info-pers" style="margin-top: 10px;">
+                <div><i class="fas fa-phone cv-icon"></i><input type="number" placeholder="Numero de phone"></div>
+                <div><i class="fas fa-envelope cv-icon"></i><input type="text" placeholder="Email"></div>
+                <div><i class="fas fa-map-marker-alt"></i><input type="text" placeholder="adresse"></div>
+            </div>
+            <div>
+                <h4 class="boldUpper" style="margin-top: 50px; line-height: 10px;">Profile</h4>
+                <p class="gris-text letter-spacing" contenteditable="true">Parlez de vous</p>
+            </div>
+
+            <div class="colonnes" style="border-top:2px solid #000;">
+                <div class="colonne1">
+                    <div id="educationsContainer">
+                        <h3>EDUCATION</h3>
+
+                        <p contenteditable="true">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span style="font-weight: bolder;">FORMATION</span>
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Etablissement<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color: gray;">Année</span>
+                        </p>
+                    </div>
+                    <span class="add-entry" (click)="ajouterFormation()"><i class="fas fa-plus-circle"></i></span>
+
+
+                    <div id="competencesContainer">
+                        <h3>COMPETANCES</h3>
+                        <p contenteditable="true">
+                            &#9679; Nouveau compétence
+                        </p>
+
+                    </div>
+                    <span class="add-entry" (click)="ajouterCompetence()"><i class="fas fa-plus-circle"></i></span>
+
+                    <div id="langagesContainer">
+
+                        <h3>LANGUAGE</h3>
+                        <p contenteditable="true">&#9679; Nouveau langue</p>
+                    </div>
+                    <span class="add-entry" (click)="ajouterLangage()"><i class="fas fa-plus-circle"></i></span>
+
+                </div>
+                <div class="colonne2" style="padding-left: 50px;padding-top: 10px;">
+                    <div id="experiencesContainer">
+                        <h3><i class="fas fa-briefcase experience-icon"></i> &nbsp;&nbsp;EXPERIENCES <span
+                                style="padding-left: 50px;">PROFESSIONNELLES</span></h3>
+                        <div class="colonnes">
+                            <div class="colonne1">
+                                <input class="annee" type="text" placeholder="début"><br>
+                                <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _</div><br>
+                                <input class="annee" type="text" placeholder="fin">
+                            </div>
+                            <div class="colonne2" style="padding-left: 20px;">
+                                <p contenteditable="true" style="font-weight: bold;"> Titre du poste</p>
+                                <p contenteditable="true">decrit votre experience : <br> -Nom de l'entreprise <br>
+                                    -Période d'emploi <br> -Responsabilités....<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="add-entry" (click)="ajouterExperience()"><i class="fas fa-plus-circle"></i></span>
+                    <div id="centresInteretContainer">
+                        <h3>CENTRES D'INTERET </h3>
+                        <p contenteditable="true">&#9679; Nouveau centre d'intérêt</p>
+                    </div>
+                    <span class="add-entry" (click)="ajouterCentreInteret()"><i class="fas fa-plus-circle"></i></span>
+
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div id="button_cont">
+        <button id="modifier" (click)="modifier()"><i class="fas fa-pencil-alt"></i></button>
+        <button id="Terminer" (click)="terminer()"><i class="fas fa-check-circle"></i></button>
+        <button id="Exporter" (click)="PDF()"><i class="fas fa-file-export"></i></button>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+#body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+    background-image: url(../../assets/img/hero-back-illustration.svg);
+  
+  }
+
+  header {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+  }
+
+  .team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5em;
+    margin: 1em;
+    text-align: center;
+    width: 300px;
+    transition: 0.3s ease;
+  }
+
+  .team-member:hover{
+    transform: scale(97%);
+    box-shadow: 0 0 2px grey;
+    cursor: pointer;
+  }
+
+  /* .team-member img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  } */
+
+  h2 {
+    color: #333;
+  }

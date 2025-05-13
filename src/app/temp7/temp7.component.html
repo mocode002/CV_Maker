@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        <title>Resume Template </title>
+        <style>
+            body {
+        background-image: url(assets/img/hero-back-illustration.svg);
+      }
+        </style>
+    </head>
+    <body>
+        <div >
+            <div class="resume" id="content">
+                <div id="first">
+                    <br>
+                    <!-- <h1 contenteditable="true" style="color:white" style="text-align: center;">Adeline Pannier</h1> -->
+                    <h1 contenteditable="true" style="color:white" style="text-align: center;" (input)="onTitleInput($event)">{{title}}</h1>
+                    <h3 contenteditable="true">Comptable Senior </h3> <br>
+                </div>
+                <div class="container">
+                    <div class="left_side">
+                        <div class="blocks">
+                            <div class="h3_div"><h3>Profil personnel</h3></div>
+                            <div class="inside">
+                                <p contenteditable="true">Je suis une comptable de 35 ans avec une expérience en comptabilité d'entreprise et en budgétisation financière. Je recherche un poste dans un environnement de travail dynamique.</p>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="blocks">
+                            <div class="h3_div"><h3>Compétences essentielles</h3></div>
+                            <div class="inside">
+                                <p contenteditable="true">-Comptabilité des salaires et calcul des impôts</p>
+                                <p contenteditable="true">- Prévisions budgétaires</p>
+                                <p contenteditable="true">- Analyse des coûts et automatisation du système</p>
+                                <p contenteditable="true">- Comptes clients/comptes fournisseurs </p>
+                            </div><br>
+                        </div>
+                        <div class="blocks">
+                            <div class="h3_div"><h3>Contactez-moi :</h3></div>
+                            <div class="inside">
+                                <p contenteditable="true">Téléphone 01 23 45 67 7890</p>
+                                <p contenteditable="true">Courriel: hello supersite.fr </p>
+                                <p contenteditable="true">www.supersite.fr</p>
+                                </div>
+                        </div><br>
+                        <div class="blocks">
+                            <div class="h3_div"><h3 id="gray">Intérêts et loisirs</h3></div>
+                            <div class="inside">
+                                <p contenteditable="true">-  Photographie de rue </p>
+                                <p contenteditable="true">- Voyages et escalade</p>
+                                <p contenteditable="true">- Lecture de non-fiction </p>
+                                <p contenteditable="true">- Résoudre des puzzles de Sudoku</p>
+                                <p contenteditable="true">- Sports et bien-être : Basketball, course à pied, yoga</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right_side">
+                        <div class="blocks">
+                            <div class="h3_div"><h3 id="gray">Carrière professionnelle</h3></div>
+                            <div class="inside">
+                                <p contenteditable="true"><strong>Comptable Senior</strong></p>
+                                <p contenteditable="true"><i>Domarin et Cie | 2017-présent</i></p>
+                                <p contenteditable="true">- Préparer les écritures d'actif, de passif et de capital</p>
+                                <p contenteditable="true">- Compiler et analyser les informations sur les comptes</p>
+                                <p contenteditable="true">- Documenter les transactions financières et effectuer des audit</p>
+                                <p contenteditable="true"><strong>Comptable Senior</strong></p>
+                                <p contenteditable="true"><i>Domarin| 2013-2017</i></p>
+                                <p contenteditable="true">- Préparation et examen des dossiers financiers de l'entreprise</p>
+                                <p contenteditable="true"> - Vérification de l'exactitude des dossiers et du paiement en temps voulu des impôts</p>
+                                
+                            </div><br>
+                        </div>
+                        <div class="blocks">
+                            <div class="h3_div"><h3 id="gray">Faits universitaires</h3></div>
+                            <div class="inside">
+                                 <p contenteditable="true"><strong>Université de Condorcet</strong></p>
+                                 <p contenteditable="true"><i>Licence en comptabilité | Diplômée en 2013</i></p>
+                                 <p contenteditable="true">- Tableaux d'honneu</p>
+                                 <p contenteditable="true">- Diplômée avec mention (Bien) </p>
+                                 <p contenteditable="true">- Membre de l'Association de comptabilité de Condorcet </p>
+                                 <p contenteditable="true">- Prix de la citation du doyen pour l'excellence académique</p>
+                                 <p contenteditable="true"><strong>Lycée Descartes</strong></p>
+                                 <p contenteditable="true"><i>Diplômée, Major de Promo 2011</i></p>
+                                 <p contenteditable="true">- Constamment au tableau d'honneur</p>
+                                 <p contenteditable="true">- Rédactrice en chef du journal de la classe </p>
+                                 <p contenteditable="true">- Danseuse en chef de la troupe de danse ASK </p>
+                                 <p contenteditable="true">- Gagnante du concours de mathématiques 2008 et 2009 </p>
+                                 <br>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="toPDF_cont">
+            <button (click)="PDF()" id="toPDF">Convert to PDF</button>
+        </div>
+        <br>
+        <br><br>
+    </body>
+</html>

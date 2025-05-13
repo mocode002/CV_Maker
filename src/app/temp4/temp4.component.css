@@ -1,0 +1,102 @@
+#big_container {
+    font-family: Arial, sans-serif;
+    background-image: url('../../assets/img/hero-back-illustration.svg');
+    margin: 0;
+    padding: 0;
+}
+#content {
+    width: 196mm;
+    height: 296mm;
+    margin: 0 auto;
+    background-color: #545454;
+    padding: 1.5cm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    /* border-bottom: 1px solid #9f9f9f; */
+}
+.header h1 {
+    color: #38cdff;
+    margin: 0;
+}
+
+h1 , h3 {
+    color: #38cdff;
+}
+
+.header p {
+    color: #61dafb;
+    font-style: italic;
+    margin: 5px 0;
+}
+.section {
+    margin-bottom: 20px;
+}
+h2 {
+    color: #333;
+}
+.info p {
+    margin: 5px 0;
+}
+.section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+.experience, .education, .skills {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+/* .skills ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style-type: none;
+    padding-left: 0;
+} */
+
+hr{
+    color: #ccc;
+}
+
+#skills_ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lang_items{
+    margin-left: 40px;
+}
+
+p,li{
+    color: #eaeaea;
+}
+
+h4{
+    color: #9ee7ff;
+}
+
+#pdfButton{
+    text-align: center;
+}
+#toPDF{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 62);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-bottom: 80px;
+}
+
+#toPDF:hover{
+    transform: scale(105%);
+    box-shadow: 0 0 8px hsla(0, 0%, 16%, 0.489);
+}
+

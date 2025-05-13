@@ -1,0 +1,94 @@
+
+
+<div id="big_container">
+    <div class="cv-container" id="content">
+
+
+        <div class="header">
+            <!-- <h1 contenteditable="true">Votre Nom</h1> -->
+            <h1 contenteditable="true" (input)="onTitleInput($event)">{{title}}</h1>
+
+            <p contenteditable="true">Titre professionnel</p>
+        </div>
+
+        <div class="section">
+            <h3>Coordonnées</h3>
+            <div class="info">
+                <p contenteditable="true">Adresse: Rue, Ville, Pays</p>
+                <p contenteditable="true">Téléphone: +33 123 456 789</p>
+                <p contenteditable="true">Email: votre&#64;email.com</p>
+                <p contenteditable="true">Site web: www.votresite.com</p>
+            </div>
+        </div>
+
+        <div class="section experience">
+            <h3>Expérience Professionnelle</h3>
+            <div>
+                <h4 contenteditable="true">Titre du poste - Entreprise</h4>
+                <p contenteditable="true">Date de début - Date de fin</p>
+                <ul>
+                    <li contenteditable="true">Description des responsabilités et réalisations</li>
+                </ul>
+            </div>
+
+            <div> 
+              <h4 contenteditable="true">Titre du poste - Entreprise</h4>
+              <p contenteditable="true">Date de début - Date de fin</p>
+              <ul>
+                  <li contenteditable="true">Description des responsabilités et réalisations</li>
+              </ul>
+          </div>
+            <!-- Ajoutez d'autres expériences professionnelles si nécessaire -->
+        </div>
+
+        <div class="section education">
+            <h3>Éducation</h3>
+            <div>
+                <h4 contenteditable="true">Diplôme - Institution</h4>
+                <p contenteditable="true">Date de début - Date de fin</p>
+            </div>
+            
+            <div>
+              <h4 contenteditable="true">Diplôme - Institution</h4>
+              <p contenteditable="true">Date de début - Date de fin</p>
+          </div>
+            <!-- Ajoutez d'autres éducations si nécessaire -->
+        </div>
+
+        <div class="section skills">
+            <h3>Skills</h3>
+            <div class="skills_li">
+                <ul id="skills_ul">
+                    <div class="li_items">
+                      <li contenteditable="true">Compétence 1</li>
+                      <li contenteditable="true">Compétence 2</li>
+                      <li contenteditable="true">Compétence 3</li>
+                    </div>
+                    <div class="li_items">
+                      <li contenteditable="true">Compétence 1</li>
+                      <li contenteditable="true">Compétence 2</li>
+                      <li contenteditable="true">Compétence 3</li>
+                    </div>
+                    <!-- Ajoutez d'autres compétences techniques si nécessaire -->
+                </ul>
+            </div>
+            <hr>
+            <h3>Langues</h3>
+            <div class="langue">
+              <ul>
+                <div class="lang_items">
+                  <li contenteditable="true">Langue 1 (Niveau)</li>
+                  <li contenteditable="true">Langue 2 (Niveau)</li>
+                  <li contenteditable="true">Langue 3 (Niveau)</li>
+                </div>
+                <!-- Ajoutez d'autres compétences linguistiques si nécessaire -->
+              </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <br>
+  <div id="pdfButton">
+    <button id="toPDF" (click)="PDF()">Convert to pdf</button>
+  </div>

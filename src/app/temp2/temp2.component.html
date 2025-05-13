@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scal=1.0" />
+  <title>Resume Template</title>
+  <style type="stylesheet">
+    body {
+        background-image: url(assets/img/hero-back-illustration.svg);
+      }
+    </style>
+</head>
+
+<body>
+  <div class="resume" id="content">
+    <div id="first">
+      <!-- <h1 contenteditable="true">SACHA DUBOIS</h1> -->
+      <h1 contenteditable="true" (input)="onTitleInput($event)">{{title}}</h1>
+      <br />
+      <h2 contenteditable="true">CHARGÉE DE PROJET</h2>
+    </div>
+    <div class="container">
+      <div class="left_side">
+        <div class="blocks" id="gray">
+          <h3>CONTACT</h3>
+          <br />
+          <div class="inside_blocks">
+            <p contenteditable="true">
+              <strong>Adresse : 123 Anywhere</strong>
+            </p>
+            <p contenteditable="true">
+              <strong>E-mail : sacha.dubois gmail.com</strong>
+            </p>
+            <p contenteditable="true">
+              <strong>Mobile : +33687459518</strong>
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div>
+          <h3 id="gray">SAVOIR-FAIRE</h3>
+          <br />
+          <div class="inside_blocks">
+            <p contenteditable="true"><strong>Gestion de projet</strong></p>
+            <p contenteditable="true">
+              <strong>Planification d'événements</strong>
+            </p>
+            <p contenteditable="true">
+              <strong>Communication efficace</strong>
+            </p>
+            <p contenteditable="true"><strong>Suivi CLIENTS</strong></p>
+          </div>
+        </div>
+        <br />
+        <div>
+          <h3 id="gray">FORMATION</h3>
+          <br />
+          <div class="inside_blocks">
+            <p contenteditable="true">
+              <strong>Licence en Gestion Événementielle</strong>
+            </p>
+            <p contenteditable="true">
+              <strong>Ecole Borcelle / Any City</strong>
+            </p>
+            <p contenteditable="true"><strong> 2012 - 2014</strong></p>
+            <br /><br />
+            <p contenteditable="true">
+              <strong>Licence en Gestionde projets</strong>
+            </p>
+            <p contenteditable="true">
+              <strong>Ecole Borcelle / Any City</strong>
+            </p>
+            <p contenteditable="true"><strong> 2010 - 2012</strong></p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div>
+          <h3 id="gray">LANGUES</h3>
+          <br />
+          <div class="inside_blocks">
+            <p contenteditable="true"><strong>Français </strong></p>
+            <br />
+            <p contenteditable="true"><strong>Anglais </strong></p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div>
+          <h3 id="gray">Centres d'intérêt</h3>
+          <br />
+          <div class="inside_blocks">
+            <p contenteditable="true"><strong>Voyage</strong></p>
+            <br />
+            <p contenteditable="true"><strong>Sport</strong></p>
+            <!-- <br />
+              <p contenteditable="true"><strong>Musique</strong></p> -->
+          </div>
+        </div>
+      </div>
+      <div class="right_side">
+        <div>
+          <h3 id="gray">PRESENTATION</h3>
+          <br />
+          <div class="inside_blocks">
+            <p contenteditable="true" class="parag">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              blandit porta leo ac consequat. Sed in consequat eros,
+              sollicitudin finibus eros. Sed iaculis, velit a rutrum pretium,
+              lectus diam malesuada elit, in lacinia lectus enim sit amet
+              risus. Ut pharetra rhoncus orci, eu dictum tortor lacinia
+              tempor.
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div>
+          <h3 id="gray">EXPERIENCES</h3>
+          <br />
+          <div class="dates_and_jobs">
+            <div id="date">
+              <p contenteditable="true">Juin 2020</p>
+              <br />
+              -<br />
+              <p contenteditable="true">PRÉSENT</p>
+            </div>
+            <div id="job">
+              <p contenteditable="true">Chargée de Projet Événementiel</p>
+              <span contenteditable="true">Wardiere Inc. Any City</span>
+              <p contenteditable="true" class="parag">
+                Planification et exécution réussies de divers événements
+                corporatifs, y compris des conférences, des lancements de
+                produits et des soirées de réseautage. Gestion complète du
+                cycle de projet, de la conception initiale à la décoration et
+                à la coordination du jour J.
+              </p>
+            </div>
+          </div>
+          <div class="dates_and_jobs">
+            <div id="date">
+              <p contenteditable="true">Juin 2014</p>
+              <br />
+              -<br />
+              <p contenteditable="true">MAI 2020</p>
+            </div>
+            <div id="job">
+              <p contenteditable="true">Assistante Événementielle</p>
+              <span contenteditable="true">Wardiere Inc. Any City</span>
+              <p contenteditable="true" class="parag">
+                Contribué à la planification et à la logistique d'événements
+                de grande envergure, y compris des mariages et des galas de
+                bienfaisance. Géré avec succès l'inscription des participants,
+                la coordination des fournisseurs et la résolution de problèmes
+                en temps réel lors des événements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="toPDF_cont">
+    <button (click)="PDF()" id="toPDF">Convert to PDF</button>
+  </div>
+  <img src="assets/img/hero-back-illustration.svg" />
+</body>
+
+</html>
+
+<!-- <app-footer></app-footer> -->

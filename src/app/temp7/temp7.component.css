@@ -1,0 +1,77 @@
+*{
+    margin: 20;
+    padding:20;
+    font-family: Arial, sans-serif
+
+}
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-left: 30px;
+    
+}
+
+#first{
+    background-color: black;
+    
+}
+h1{
+    color: white;
+}
+h3{
+    color:goldenrod;
+    text-align: center;
+    
+}
+.h3_div{
+    background-color: black;
+    border-radius: 1px;
+    margin:5px;
+    padding: 1px;
+}
+.resume{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: 40mm 257mm;
+    width: 250mm;
+    height: 297mm;
+    background-color: rgb(255, 255, 255);
+  }
+  .container{
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+ 
+  }
+  .container .left_side{
+    grid-column: 1;
+    /* padding: 10px; */
+  }
+  .container .right_side{
+    grid-column: 2;
+    /* padding: 10px; */
+  }
+  .blocks{
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:5px;
+    border-radius: 2px;
+}
+.inside{
+    margin:10px;
+}
+#toPDF_cont{
+    text-align: center;
+  }
+  
+  #toPDF{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(62, 62, 62);
+    color: white;
+    font-family: "Roboto",sans-serif;
+    cursor: pointer;
+  }
